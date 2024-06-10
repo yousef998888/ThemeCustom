@@ -158,6 +158,62 @@ nav ul li a {
 .hero-button:hover {
     background-color: #e6603b;
 }
+/* Style for main header menu */
+.header-menu {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.header-menu li {
+    position: relative;
+}
+
+.header-menu li a {
+    text-decoration: none;
+    color: #002366; /* Navy color */
+    padding: 10px 15px;
+    display: block;
+}
+
+
+
+/* Style for submenu */
+.header-menu .sub-menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #fbfbfb;
+    box-shadow: 0 16px 16px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+    padding: 10px;
+ 
+}
+
+
+
+.header-menu .sub-menu li {
+    display: block;
+}
+
+.header-menu .sub-menu li a {
+    color: #002366;
+    font-size: 12px;
+}
+
+.header-menu .sub-menu li a:hover {
+    color: #ff7043;
+    
+    
+}
+
+.header-menu li.show .sub-menu {
+    display: block;
+}
+
 
 /* post-styles.css */
 .projects-container {

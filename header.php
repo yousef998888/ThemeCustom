@@ -37,7 +37,37 @@
 
 </header>
 <br>
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    const menuItems = document.querySelectorAll('.header-menu > li');
 
+    menuItems.forEach(item => {
+        item.addEventListener('click', function(event) {
+            // Prevent default link action
+            event.preventDefault();
+
+            // Close other open submenus
+            menuItems.forEach(i => {
+                if (i !== item) {
+                    i.classList.remove('show');
+                }
+            });
+
+            // Toggle the submenu
+            item.classList.toggle('show');
+        });
+    });
+
+    // Close the submenu if clicked outside
+    document.addEventListener('click', function(event) {
+        if (!event.target.closest('.header-menu')) {
+            menuItems.forEach(item => {
+                item.classList.remove('show');
+            });
+        }
+    });
+});
+</script>
 </body>
 
  
