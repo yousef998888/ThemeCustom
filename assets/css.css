@@ -1,0 +1,405 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+/* Header Styles */
+header {
+    width: 100%;
+    background-color: #ffffff;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+.top-bar {
+    display: flex;
+    justify-content: flex-end;
+    padding: 10px 10px;
+    margin-right: 20px;
+}
+
+.icons a {
+    margin-left: 10px;
+}
+
+.icons img {
+    height: 40px;
+    width: 40px;
+}
+
+.headers {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #f8f9fa;
+    padding: 20px;
+    transition: all 0.3s ease;
+    z-index: 1000;
+    text-align: center;
+}
+
+.header-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 10px 20px;
+}
+
+.logo img {
+    height: 60px;
+}
+
+nav ul {
+    display: flex;
+    gap: 20px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    position: relative;
+}
+
+nav ul li a {
+    color: #002b5c;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.nav-toggle {
+    display: none;
+    cursor: pointer;
+}
+
+.nav-toggle span {
+    background: #002b5c;
+    display: block;
+    height: 3px;
+    width: 25px;
+    margin: 5px;
+    transition: 0.3s;
+}
+
+.nav-active {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #f8f9fa;
+    width: 100%;
+    z-index: 999;
+}
+
+.nav-active li {
+    margin-bottom: 15px;
+}
+
+.donate  {
+    background-color: #ff7043;
+    color: #ffffff;
+    padding: 10px 20px;
+    text-decoration: none;
+    font-weight: bold;
+    border: none; 
+    border-radius: 5px;
+    cursor: pointer;
+}
+.donate a {
+    text-decoration: none;
+
+}
+.donate:hover {
+    background-color: #e6603b;
+}
+
+.hero-section {
+    position: relative;
+    text-align: center;
+    color: white;
+    margin-top: 100px;
+    /* Adjusted for fixed header */
+}
+
+.hero-image {
+    width: 100%;
+    height: auto;
+}
+
+.hero-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 90%;
+}
+
+.hero-text h1 {
+    font-size: 36px;
+    margin: 0;
+}
+
+.hero-button {
+    background-color: #ff7043;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+.hero-button:hover {
+    background-color: #e6603b;
+}
+
+/* post-styles.css */
+.projects-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px; /* Adjust spacing between projects */
+    margin-left: 20px;
+}
+
+.project {
+    width: calc(33.333% - 20px); /* Adjust width of each project */
+    background-color: #fff;
+    border: 1px solid #ccc;
+    padding: 30px;
+    box-sizing: border-box;
+}
+
+.projects h2 {
+    text-align: center;
+}
+
+.project-thumbnail img {
+    max-width: 100%;
+    height: auto;
+}
+
+@media screen and (max-width: 768px) {
+    .project {
+        width: calc(50% - 20px);
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .project {
+        width: calc(100% - 20px);
+    }
+}
+
+.single-project{
+    gap: 60px;
+    text-align: center;
+}
+
+
+/* Footer Styles */
+footer {
+    background-color: #002b5c;
+    color: white;
+    padding: 30px 0;    
+    text-align: start;
+}
+.footer-bottom,.icons-footer{
+    text-align: center;
+
+}
+.footer-column ul li a {
+  
+    font-weight: 100;
+    justify-content: space-between;
+    display: block; /* Make each link a block element */
+    margin-bottom: 10px; /* Adjust the spacing as needed */
+    color: white; /* If the text color is not white by default */
+    text-decoration: none; /* To remove underline if not needed */
+
+    
+
+}
+
+.footer-column ul li a:hover {
+    color: #67b3c9;
+    text-decoration: none;
+}
+
+.footer p {
+    margin: 0;
+    font-size: 14px;
+}
+
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.footer-column {
+    flex: 1;
+    margin: 0 10px;
+}
+.footer-column ul {
+    list-style-type: none; /* إزالة النقاط */
+    padding: 0; /* إزالة الهوامش الافتراضية */
+}
+
+.social-icons a {
+    margin: 0 10px;
+}
+
+.social-icons img {
+    height: 40px;
+    width: 40px;
+}
+
+
+
+
+
+/* تحديد عرض الحاوية الرئيسي وجعلها تتوسط الصفحة */
+.container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* التأكد من أن الصور تأخذ 100% من عرض الحاوية */
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* تحسين استجابة العناصر */
+.card {
+    width: 100%;
+    max-width: 500px;
+    margin: 20px 0;
+}
+
+/* مثال لاستخدام Flexbox لتوزيع العناصر */
+.flex-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.flex-item {
+    flex: 1 1 300px;
+    /* العنصر يأخذ 300px كحد أدنى */
+    margin: 10px;
+}
+
+
+
+/* Media Queries */
+@media (max-width: 768px) {
+    .header-content {
+        flex-direction: column;
+    }
+    nav ul {
+        flex-direction: column;
+        display: none;
+        width: 100%;
+    }
+    nav ul li {
+        margin: 10px 0;
+    }
+    .nav-toggle {
+        display: block;
+    }
+    .campaigns {
+        flex-direction: column;
+        align-items: center;
+    }
+    .campaign {
+        max-width: 100%;
+    }
+    .container,
+    .container-3 {
+        flex-direction: column;
+    }
+
+    .left-text,
+    .right-text,
+    .text-container,
+    .text-box,
+    .image-box {
+        width: 100%;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero-text h1 {
+        font-size: 28px;
+    }
+
+    .hero-button {
+        font-size: 16px;
+        padding: 8px 16px;
+    }
+
+    .campaign-text h2 {
+        font-size: 28px;
+    }
+
+    .campaign-text p {
+        font-size: 16px;
+    }
+
+    .progress-text {
+        font-size: 12px;
+    }
+
+    .counter-number {
+        font-size: 30px;
+    }
+
+    .counter-title {
+        font-size: 14px;
+    }
+
+    .subscribe-container h2 {
+        font-size: 20px;
+    }
+
+    .subscribe-container p {
+        font-size: 16px;
+    }
+
+    .subscribe-container button {
+        font-size: 16px;
+        padding: 8px 16px;
+    }
+}
+
+
+/* Media Queries */
+@media (max-width: 768px) {
+    .footer-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer-column {
+        margin: 10px 0;
+        width: 100%;
+        text-align: center;
+    }
+
+    .footer-column ul {
+        padding: 0;
+    }
+}
